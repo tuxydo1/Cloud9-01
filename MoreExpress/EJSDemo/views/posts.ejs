@@ -1,0 +1,27 @@
+<!--Include the header partial:-->
+<% include partials/header %>
+
+<!--Loops:-->
+<h1>The Posts page</h1>
+
+<!--An example using forEach:-->
+
+<% posts.forEach(function(post){ %>
+
+   <li>
+      <%= post.title %> - <strong><%= post.author %></strong>
+   </li>
+
+<% }) %>
+
+<!--An example using a for loop:-->
+<% for (var i = 0; i < posts.length; i++) { %>
+
+   <li>
+      <%= posts[i].title %> - <strong><%= posts[i].author %></strong>
+   </li>
+   
+<% } %>
+
+<!--Include the footer partial:-->
+<% include partials/footer %>

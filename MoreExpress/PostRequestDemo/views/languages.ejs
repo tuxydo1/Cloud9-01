@@ -1,0 +1,17 @@
+<h1>The languages page</h1>
+
+<% languages.forEach(function(language){ %>
+   
+   <li><%=language%></li>
+      
+<%});%>
+
+<!--Form to add a new language via the addlanguage post route:-->
+<form action="/addlanguage" method="POST">
+   
+   <!--The name below is the key that we use to look it up in the route-->
+   <input type="text" name="newlanguage" placeholder="language">
+   <button>I am learning a new language</button>
+   
+   
+</form>

@@ -1,0 +1,14 @@
+/*Stylesheet for things that we can't do using Bootstrap*/
+/*Set all images within bootstrap thumbnail class to occupy 100% width:*/
+.thumbnail img {
+   width: 100%;
+}
+
+/*Get rid of padding around thumbnail*/
+.thumbnail {
+   padding: 0;
+}
+
+.thumbnail .caption-full {
+   padding: 9px;
+}

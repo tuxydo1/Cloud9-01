@@ -1,0 +1,12 @@
+i.icon {
+   font-size: 2em;
+}
+
+.container.main {
+    margin-top: 7.0em;
+}
+
+/*Get the delete button to go on the same line as the edit button*/
+#delete {
+    display: inline
+}

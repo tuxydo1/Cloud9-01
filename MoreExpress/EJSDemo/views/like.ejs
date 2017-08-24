@@ -1,0 +1,25 @@
+<!-- The parts within < % parts are javascript, the rest is normal html-->
+
+<!--Include the header partial:-->
+<% include partials/header %>
+
+<!--Note the '=' in the ejs tag below which causes the contents to be rendered as html-->
+
+<h1>You like: <%= thingVar %></h1>
+
+<% if(thingVar.toLowerCase() === "pasta") { %>
+
+   <h2>Good choice!  Pasta is the best!</h2>
+   
+<% } 
+   else { %>
+   
+   <p>Bad choice</p>
+   
+<% } %>
+
+
+<p>P.S. This is the like.ejs file</p>
+
+<!--Include the footer partial:-->
+<% include partials/footer %>

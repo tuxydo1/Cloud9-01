@@ -1,0 +1,13 @@
+<% include ./partials/header %>
+
+<h1>The login page</h1>
+
+<form action="/login" method="POST">
+   <input type="text" name="username" placeholder="username">
+   <input type="password" name="password" placeholder="password">
+   <!--<button>Login</button>-->
+   <!--Could use button here, but here's how to use <input> instead:-->
+   <input type="submit" value="Login">
+</form>
+
+<% include ./partials/footer %>
